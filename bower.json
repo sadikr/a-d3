@@ -1,0 +1,22 @@
+{
+    "name": "a-d3",
+    "version": "1.0.0",
+    "homepage": "https://github.com/sadikr/a-d3",
+    "authors": [
+        "Sadik Rupani <sadik.rupani@synerzip.com>"
+    ],
+    "description": "a-d3 chart front end dependencies",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies" : {
+        "d3" : "latest",
+        "requirejs" : "latest",
+        "jquery" : "latest"
+    }
+}

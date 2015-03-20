@@ -1,0 +1,39 @@
+{
+    "title": "a-d3",
+    "name": "a-d3",
+    "description": " ",
+    "version": "1.0.0",
+    "author": {
+        "name": "Sadik Rupani",
+        "email": "sadik.rupani@synerzip.com"
+    },
+    "homepage": "https://github.com/sadikr/a-d3",
+    "bugs": "https://github.com/sadikr/a-d3/issues",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "--"
+        }
+    ],
+    "engines": {},
+    "scripts": {
+        "start": "node ./bin/www",
+        "install": "bower install",
+        "postinstall" : "",
+        "test": ""
+    },
+    "dependencies": {
+        "express": "~4.12.2",
+        "bower": "*",
+        "grunt": "*",
+        "grunt-cli": "*",
+        "grunt-contrib-cssmin": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-yuidoc": "^0.5.2"
+    },
+    "devDependencies": {
+        "load-grunt-tasks": "*"
+    }
+}
