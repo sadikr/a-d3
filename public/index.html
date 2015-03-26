@@ -1,10 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>a-d3</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Play Chart is normal line chart having some media control features like Play, Pause, Fast Forward and Rewind on chart tooltip.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>a-d3 chart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        body {
+            font: 10px sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        /*
+        .x.axis path {
+          display: none;
+        }
+        */
+
+        .line {
+            stroke: black;
+            fill: none;
+            stroke-width: 0.75px;
+        }
+
+        .line.line0 {
+            stroke: steelblue;
+        }
+
+        .line.line1 {
+            stroke: indianred;
+        }
+
+        .overlay {
+            fill: none;
+            pointer-events: all;
+        }
+
+        .focus circle {
+            fill: none;
+        }
+
+        .focus circle.y0 {
+            stroke: blue;
+        }
+
+        .focus circle.y1 {
+            stroke: red;
+        }
+
+        .focus line {
+            stroke: purple;
+            shape-rendering: crispEdges;
+        }
+
+        .focus line.y0 {
+            stroke: steelblue;
+            stroke-dasharray: 3 3;
+            opacity: .5;
+        }
+
+        .focus line.y1 {
+            stroke: indianred;
+            stroke-dasharray: 3 3;
+            opacity: .5;
+        }
+
+        .brush .extent {
+            stroke: #fff;
+            fill-opacity: .125;
+            shape-rendering: crispEdges;
+        }
+    </style>
 </head>
 <body>
-Hello world!
+<div class="wrapper">
+    <div class="button_wrapper">
+        <ul>
+            <li>
+                <button>Play</button>
+                <button>Pause</button>
+            </li>
+            <li>
+                <button>Stop</button>
+            </li>
+            <li>
+                <button>Fast Forward</button>
+            </li>
+            <li>
+                <button>Rewind</button>
+            </li>
+            <li>
+                <button>Streaming On/Off</button>
+            </li>
+        </ul>
+    </div>
+    <div class="chart_wrapper">
+
+    </div>
+</div>
 </body>
+<script type="text/javascript" data-main="main" src="components/requirejs/require.js"></script>
 </html>
